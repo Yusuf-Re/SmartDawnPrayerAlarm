@@ -25,6 +25,17 @@ One minute before Fajr, the RGB LED gradually brightens from darkness into a war
 - Non-blocking alarm timing using `millis()`
 - Built-in one-minute test mode for demonstrations
 
+### How It Works
+
+1. The Arduino reads the current date and time from the DS1307 RTC.
+2. The sketch determines the UK GMT/BST offset for the date.
+3. The PrayerTimes library calculates that day's Fajr time using Manchester coordinates and the MWL method.
+4. One minute before Fajr, PWM gradually increases the RGB LED brightness to create a warm amber sunrise effect.
+5. At Fajr, the selected buzzer pattern begins and the RGB LED enters a smooth breathing animation.
+6. Pressing the stop button silences the buzzer and prevents the alarm from retriggering on the same day.
+
+The alarm patterns use non-blocking timing, allowing the OLED, controls, lighting and alarm logic to continue running together.
+
 ## 📍Location, Time and Fajr Calculation
 
 The sketch is preset for Manchester, UK:
@@ -100,7 +111,7 @@ The OLED and RTC share the same **I2C bus**, so both use the Arduino's SDA and S
 
 ![Sunrise light](sunrise-light.jpg)
 
-## Software and Libraries
+## 💻 Software and Libraries
 
 The project uses:
 
@@ -112,17 +123,6 @@ The project uses:
 - `math.h` - smooth breathing-light calculation
 
 Install the required external libraries through the Arduino IDE Library Manager before compiling.
-
-## How It Works
-
-1. The Arduino reads the current date and time from the DS1307 RTC.
-2. The sketch determines the UK GMT/BST offset for the date.
-3. The PrayerTimes library calculates that day's Fajr time using Manchester coordinates and the MWL method.
-4. One minute before Fajr, PWM gradually increases the RGB LED brightness to create a warm amber sunrise effect.
-5. At Fajr, the selected buzzer pattern begins and the RGB LED enters a smooth breathing animation.
-6. Pressing the stop button silences the buzzer and prevents the alarm from retriggering on the same day.
-
-The alarm patterns use non-blocking timing, allowing the OLED, controls, lighting and alarm logic to continue running together.
 
 ## Alarm Modes
 
