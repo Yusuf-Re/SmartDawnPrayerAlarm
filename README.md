@@ -155,23 +155,6 @@ The main sketch deliberately does **not** call `rtc.adjust(...)` during normal s
 
 Set the DS1307 clock separately when first configuring the module and keep its backup coin-cell battery installed so it can retain time when the Arduino is powered off.
 
-## Repository Structure
-
-```text
-SmartDawnPrayerAlarm/
-├── SmartDawnPrayerAlarm.ino
-├── README.md
-├── LICENSE
-├── .gitignore
-├── images/
-│   ├── full-prototype.jpg
-│   ├── hardware-layout.jpg
-│   ├── oled-interface.jpg
-│   └── sunrise-light.jpg
-└── schematic/
-    └── SmartDawnPrayerAlarm-Schematic.png
-```
-
 ## Skills Demonstrated
 
 This project demonstrates Arduino development, embedded C/C++, I2C communication, PWM control, RTC integration, OLED interfacing, analog and digital inputs, circuit prototyping, non-blocking timing, debugging and system integration.
