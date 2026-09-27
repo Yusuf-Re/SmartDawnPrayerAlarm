@@ -60,7 +60,7 @@ To use the project in another city, change the latitude and longitude and review
 | Push button | Stops the alarm |
 | Breadboard and jumper wires | Prototype connections |
 
-## Pin Configurations
+### Pin Configurations
 
 | Device | Arduino Uno connection |
 |---|---|
