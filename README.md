@@ -93,11 +93,11 @@ To use the project in another city, change the latitude and longitude and review
 
 The OLED and RTC share the same **I2C bus**, so both use the Arduino's SDA and SCL lines. The OLED is configured at address `0x3C`, while the DS1307 normally uses address `0x68`.
 
-## Circuit Schematic
+## 🔋Circuit Schematic
 
 ![Circuit schematic](SmartDawnPrayerAlarm-Schematic.png)
 
-## Project Photos
+## 📸 Project Photos
 
 ### OLED interface
 
