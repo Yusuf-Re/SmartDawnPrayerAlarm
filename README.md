@@ -1,7 +1,8 @@
-# Smart Dawn Prayer Alarm
+# Smart Dawn Prayer Alarm ⏰
 
 An Arduino-based smart Fajr alarm and nightlight designed to provide a gradual wake-up experience for the dawn prayer.
 
+## 🚀 Overview
 The project uses a **DS1307 real-time clock**, **SSD1306 OLED display**, **RGB LED**, **passive buzzer**, **push button**, and **potentiometer**. It automatically calculates the daily Fajr time for **Manchester, UK** using the **Muslim World League (MWL)** prayer-time calculation method and applies UK GMT/BST adjustment.
 
 One minute before Fajr, the RGB LED gradually brightens from darkness into a warm amber glow. At Fajr, the buzzer alarm starts and the LED changes to a slow breathing effect.
@@ -24,7 +25,7 @@ One minute before Fajr, the RGB LED gradually brightens from darkness into a war
 - Non-blocking alarm timing using `millis()`
 - Built-in one-minute test mode for demonstrations
 
-## Location, Time and Fajr Calculation
+## 📍Location, Time and Fajr Calculation
 
 The sketch is preset for Manchester, UK:
 
@@ -45,7 +46,7 @@ The sketch also contains UK GMT/BST logic so the calculated Fajr time follows th
 
 To use the project in another city, change the latitude and longitude and review the time-zone/DST logic for that location.
 
-## Hardware
+## 🛠️ Hardware Requirments
 
 | Component | Purpose |
 |---|---|
@@ -59,7 +60,7 @@ To use the project in another city, change the latitude and longitude and review
 | Push button | Stops the alarm |
 | Breadboard and jumper wires | Prototype connections |
 
-## Pin Connections
+## Pin Configurations
 
 | Device | Arduino Uno connection |
 |---|---|
