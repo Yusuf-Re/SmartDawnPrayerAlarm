@@ -9,7 +9,7 @@ One minute before Fajr, the RGB LED gradually brightens from darkness into a war
 
 ![Full prototype](full-prototype.jpg)
 
-## Features
+### Features
 
 - Automatic daily Fajr-time calculation using the PrayerTimes library
 - Manchester, UK location preset
