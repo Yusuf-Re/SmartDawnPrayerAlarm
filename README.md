@@ -159,15 +159,6 @@ Set the DS1307 clock separately when first configuring the module and keep its b
 
 This project demonstrates Arduino development, embedded C/C++, I2C communication, PWM control, RTC integration, OLED interfacing, analog and digital inputs, circuit prototyping, non-blocking timing, debugging and system integration.
 
-## Future Improvements
-
-- Add a user menu for changing location and alarm settings
-- Store user settings in EEPROM
-- Use a DS3231 RTC for improved clock accuracy
-- Add adjustable sunrise duration and brightness
-- Add a diffuser or enclosure for the light
-- Design a custom PCB or compact permanent prototype
-
 ## License
 
 This project is released under the [MIT License](LICENSE).
