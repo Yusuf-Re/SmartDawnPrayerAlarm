@@ -6,7 +6,7 @@ The project uses a **DS1307 real-time clock**, **SSD1306 OLED display**, **RGB L
 
 One minute before Fajr, the RGB LED gradually brightens from darkness into a warm amber glow. At Fajr, the buzzer alarm starts and the LED changes to a slow breathing effect.
 
-![Full prototype](images/full-prototype.jpg)
+![Full prototype](full-prototype.jpg)
 
 ## Features
 
@@ -83,21 +83,21 @@ The OLED and RTC share the same **I2C bus**, so both use the Arduino's SDA and S
 
 ## Circuit Schematic
 
-![Circuit schematic](schematic/SmartDawnPrayerAlarm-Schematic.png)
+![Circuit schematic](SmartDawnPrayerAlarm-Schematic.png)
 
 ## Project Photos
 
 ### OLED interface
 
-![OLED interface](images/oled-interface.jpg)
+![OLED interface](oled-interface.jpg)
 
 ### Prototype hardware layout
 
-![Hardware layout](images/hardware-layout.jpg)
+![Hardware layout](hardware-layout.jpg)
 
 ### Sunrise light
 
-![Sunrise light](images/sunrise-light.jpg)
+![Sunrise light](sunrise-light.jpg)
 
 ## Software and Libraries
 
